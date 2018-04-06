@@ -11,7 +11,7 @@ const promisify = require('./promisify')
 const readFile = promisify(fs.readFile).bind(fs)
 
 module.exports = async ctx => {
-  if (ctx.solved) return
+  if (ctx.solved || ctx.path.startsWith('/server')) return
 
   try {
     return type(mime.lookup(ctx.path))
