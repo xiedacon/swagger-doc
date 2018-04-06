@@ -25,6 +25,7 @@
   "dependencies": {
     "glob": "^7.1.2",
     "mime-types": "^2.1.18",
+    "opn": "^5.3.0",
     "server": "^1.0.18"
   }
 }
